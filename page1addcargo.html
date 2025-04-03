@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Management System</title>
+    <style>
+        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+        background-color: #f4f4f4;
+        background-position: center;
+        text-align: center;
+    }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #333;
+            animation: bounce 2s infinite;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: red;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            text-align: left;
+        }
+        
+        .navbar {
+        background: whitesmoke;
+        color : black;
+        padding: 10px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cargo Management System</h1>
+        <p>Manage your cargo shipments efficiently with our simple system.</p><div class="info">
+        <h2>About</h2>
+        <p>The Cargo Management System helps businesses track and manage cargo shipments. It provides an easy way to log cargo details and ensure smooth transportation.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Easy cargo entry</li>
+            <li>Basic shipment tracking</li>
+            <li>User-friendly interface</li>
+        </ul>
+    </div>
+
+    <h2>Add Cargo</h2>
+    <form>
+        <div class="form-group">
+            <label for="cargoName">Cargo Name:</label>
+            <input type="text" id="cargoName" placeholder="Enter cargo name" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter destination" required>
+        </div>
+        <button onclick=myfunction()>Submit</button>
+        <script>
+            function myfunction() {
+                alert("Cargo details submitted successfully!");
+            }
+
+        </script>
+        <br>
+        <div class="navbar">
+            <br>
+            <a href="page1addcargo.html">Add Cargo</a>
+            <a href="page3about.html">About</a>
+            <a href="page4help.html">help</a>
+            <a href="#Track Shipment">Track Shipment</a>
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>

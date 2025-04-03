@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargo Management System</title>
+    <style>
+        
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+        background-color: #f4f4f4;
+        background-position: center;
+        text-align: center;
+    }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #333;
+            animation: bounce 2s infinite;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: red;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            text-align: left;
+        }
+        
+        .navbar {
+        background: whitesmoke;
+        color : black;
+        padding: 10px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    .scrollable-content {
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .scrollable-content p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    .scrollable-content a {
+        color: #2196F3;
+        text-decoration: none;
+    }
+    .scrollable-content a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cargo Management System</h1>
+        <p>Manage your cargo shipments efficiently with our simple system.</p>
+        <div class="info">
+            <p>Learn more about Cargo Management Systems below:</p>
+        </div>
+
+        <h2>What is a Cargo Management System?</h2>
+        <div class="scrollable-content">
+            <p>
+                A Cargo Management System (CMS) is a software solution designed to streamline and optimize the process of managing cargo shipments. It helps businesses track, monitor, and manage the movement of goods from one location to another. CMS typically includes features such as inventory tracking, shipment scheduling, route optimization, and real-time updates. These systems are widely used in logistics, transportation, and supply chain industries to improve efficiency and reduce costs.
+            </p>
+            <p>
+                Cargo Management Systems can integrate with other tools like warehouse management systems (WMS) and enterprise resource planning (ERP) software to provide a comprehensive solution for managing the entire supply chain. They also support compliance with international shipping regulations and provide analytics to help businesses make data-driven decisions.
+            </p>
+           
+            <h3>What it does:</h3>
+            <ul>
+                <li><strong>Streamlines Operations:</strong> Simplifies and automates various aspects of cargo management, reducing errors and improving efficiency.</li>
+                <li><strong>Tracks Shipments:</strong> Provides real-time visibility into the location and status of cargo throughout the shipping process.</li>
+                <li><strong>Manages Documentation:</strong> Facilitates the creation, storage, and retrieval of essential documents related to cargo shipments.</li>
+                <li><strong>Integrates with Various Modes of Transport:</strong> Handles shipments by air, road, and sea, integrating with different shipping methods.</li>
+                <li><strong>Improves Communication:</strong> Facilitates communication between shippers, carriers, and customers.</li>
+                <li><strong>Automates Tasks:</strong> Automates tasks like quote generation, booking, AWB creation, and invoicing.</li>
+                <li><strong>Enhances Customer Experience:</strong> Provides real-time updates and tracking information to customers, improving transparency and satisfaction.</li>
+            </ul>
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Booking and Scheduling:</strong> Allows users to book shipments and schedule transportation.</li>
+                <li><strong>Real-time Tracking:</strong> Enables users to monitor the location and status of cargo in real-time.</li>
+                <li><strong>Document Management:</strong> Facilitates the creation, storage, and retrieval of documents related to shipments.</li>
+                <li><strong>Reporting and Analytics:</strong> Provides reports and analytics to help users track performance and make informed decisions.</li>
+                <li><strong>Integration with Other Systems:</strong> Can integrate with other business systems, such as ERP and CRM.</li>
+                <li><strong>User-Friendly Interface:</strong> Designed to be easy to use for both technical and non-technical users.</li>
+                <li><strong>Customization:</strong> Can be customized to meet the specific needs of different businesses.</li>
+                <li><strong>Mobile Access:</strong> Some CMS offer mobile apps for real-time access and tracking.</li>
+            </ul>
+            <p>
+                For more detailed information, you can visit the <a href="https://en.wikipedia.org/wiki/Cargo_management_system" target="_blank">Wikipedia page on Cargo Management Systems</a>.
+            </p>
+        </div>
+
+        <div class="navbar">
+            <br>
+            <a href="page1addcargo.html">Add Cargo</a>
+            <a href="page3about.html">About</a>
+            <a href="page4help.html">help</a>
+            <a href="#Track Shipment">Track Shipment</a>
+        </div>
+    </div>
+
+</body>
+</html>
